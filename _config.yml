@@ -11,3 +11,13 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      values:
+        lang: en
+  - scope:
+      path: "fr"
+      values:
+        lang: fr
