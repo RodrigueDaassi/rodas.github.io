@@ -1,102 +1,60 @@
----
-layout: menutitle_fr
-title: Rodrigue Daassi
----
-<script>
-$(document).ready(function() {
-    $('#home').addClass('active');
-})
-</script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/academicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <a href="javascript:void(0);" id="mobileMenu" class="icon" onclick="myMenu()">
+      <i class="fa fa-bars"></i> Menu
+    </a>
+    <div class="Menu" id="Menu">
+      <div class="Menuleft" id="Menuleft">
+        <h1><a href="{{ site.baseurl }}/fr/about">Rodrigue Daassi</a></h1>
+      </div><!-- Menuleft -->
 
-<div id="Homepage">
-  <div class="Homeleft" id="Homeleft">
-    <img id="imgID" src="{{ site.baseurl }}/files/photos/ID_1.jpg" alt="Rodrigue Daassi">
-    <div align="center">
-      <h1>Rodrigue Daassi</h1>
-      <h2>Chercheur</h2>
-      <a href="https://www.biopterre.com/equipe/rodrigue-daassi/?lang=en" target="_blank">Biopterre - Centre de développement des bioproduits Innovateur de nature</a>
-    </div>
+      <div class="Menuright" id="Menuright">
+        <a id='home' href="{{ site.baseurl }}/fr/"><i class="fa fa-fw fa-home"></i>Accueil</a>
+        <a id='about' href="{{ site.baseurl }}/fr/about">À Propos de Moi</a>
+        <a id='research' href="{{ site.baseurl }}/fr/research">Recherche</a>
+        <a id='hobbies' href="{{ site.baseurl }}/fr/hobbies">Loisirs</a>
+        <div class="language-switch">
+          <a href="{{ site.baseurl }}/">EN</a> | <a href="{{ site.baseurl }}/fr/">FR</a>
+        </div>
+      </div><!-- Menuright -->
 
-    <br/>
+    </div><!-- Menu-->
+  </header>
 
-    <div class="contact" align="center">
-      <div class="mobileShow">
-        <i id="icon" class="fa fa-map-marker" style='font-size:18px;color:gray'></i>
-        <p>1642, rue de la Ferme, Sainte-Anne-de-la-Pocatière (Québec), Canada, G0R 1Z0</p> <br/>
-      </div>
-      <i id="icon" class="fa fa-phone-square" style='font-size:18px;color:gray'></i><p> +1 418 856-5917</p>
-    </div>
+  <main id="Main">
+    {{ content }}
+  </main>
 
-    <div class="mobileShow">
-      <br/>
-    </div>
+  <footer id="footer">
+    <div class="foot leftfoot">
+      <ul>
+        <li><p>Email: <a href="mailto:rodrigue.daassi@biopterre.com">rodrigue.daassi@biopterre.com</a></p></li>
+        <li><p>Affiliations: <a href="https://www.biopterre.com/" target="_blank">Biopterre</a>, <a href="https://www.biopterre.com/english-version" target="_blank">Biopterre - Centre de développement des bioproduits Innovateur de nature</a></p></li>
+      </ul>
+    </div><!-- leftfoot -->
 
-    <br/>
+    <div class="mobileShow foot centerfoot">
+      <p></p>
+    </div><!-- rightfoot -->
 
-    <div id="Myinfo" align="center">
-      <a href="mailto:rodrigue.daassi@biopterre.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-      <a href="{{ site.baseurl }}/files/CV/CV_RodrigueDaassi_Mai2024.pdf" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a>
-      <a href="https://scholar.google.fr/citations?user=ap_L-9gAAAAJ&hl=fr" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>
-      <a href="https://github.com/RodrigueDaassi" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-      <a href="https://www.linkedin.com/in/rodriguedaassi/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-      <a href="https://orcid.org/0000-0003-3044-3796" target="_blank"><i class="ai ai-orcid-square ai-2x"></i></a>
-    </div><!-- Myinfo -->
-
-  </div><!-- Homeleft -->
-
-  <div class="Homeright" id="Homeright">
-    <div class="mobileShow">
-      <br/>
-    </div>
-    <h1>Biographie</h1>
-    <hr>
-    <p align="justify">
-      Bienvenue sur ma page personnelle !
-    </p>
-    <p align="justify">
-      Je suis chercheur à <a href="https://www.biopterre.com/english-version" target="_blank">Biopterre - Centre de bioproduits et d'innovation</a>. Actuellement, je contribue à Biopterre en tant que chercheur, en me concentrant sur la multiplication in vitro des plantes carnivores, la valorisation des extraits de résidus de cannabis pour le contrôle biologique des champignons du sol et l'isolation et la caractérisation des lignines provenant de résidus agricoles. Mon travail s'étend également à la production de nanoparticules et aux applications innovantes dans le domaine de l'agriculture intelligente.
-    </p>
-    <p align="justify">
-      J'ai obtenu mon doctorat en science du bois et matériaux biosourcés à l'<a href="https://www.ffgg.ulaval.ca/sciences-du-bois-et-de-la-foret" target="_blank">Université Laval</a> en 2022.
-    </p>
-
-    <br/>
-    <h2>Actualités</h2>
-    <ul>
-      <li><p class="nomarginafter"><b>Nouvel article</b> - Ramial chipped wood and poultry litter amendments improve soil physico-chemical properties and vegetable crop production in Benin (janvier 2024)</p>
-        <a type="button" class="button" href="/files/Papers/RCW and poultry manure.pdf" target="_blank">Article</a>
-      </li>
-      <li><p class="nomarginafter"><b>Nouvel article</b> - Optimization of the Electrospray Process to Produce Lignin Nanoparticles for PLA-Based Food Packaging - avec Durand, K., Rodrigue, D., & Stevanovic, T. (septembre 2023)</p>
-        <a type="button" class="button" href="/files/Papers/polymers-15-02973.pdf" target="_blank">Article</a>
-      </li>
-      <li><p class="nomarginafter"><b>Nouvel article</b> - Impacts des amendements organiques sur les caractéristiques physicochimiques d’un sol ferrallitique du Sud-Bénin - avec Bodjrènou, R., Ahamidé, B., Germain, D., Stevanovic, T., Khasa, D., & Amadji, G. (septembre 2022)</p>
-        <a type="button" class="button" href="/files/Papers/Amendement organique.pdf" target="_blank">Article</a>
-        <a type="button" class="button" href="/files/Papers/PEEffort_OA.pdf" target="_blank">Appendice en ligne</a>
-      </li>
-      <li><p class="nomarginafter"><b>Nouvel article</b> - Impact of Pre-extraction on Xylose Recovery from Two Lignocellulosic Agro-wastes. BioResources - avec Kasangana, P. B., Auclair, N., Durand, K., Rodrigue, D., & Stevanovic, T. (juin 2022)</p>
-        <a type="button" class="button" href="/files/Papers/Preextraction.pdf" target="_blank">Article</a>
-      </li>
-      <li><p class="nomarginafter"><b>Nouvel article</b> - Monitoring transformation of two tropical lignocellulosics and their lignins after residence in Benin soils - avec Kasangana, P. B., Khasa, D. P., & Stevanovic, T. (juin 2021)</p>
-        <a type="button" class="button" href="/files/Papers/Monitoring.pdf" target="_blank">Article</a>
-      </li>
-      <li><p class="nomarginafter"><b>Nouvel article</b> - Chemical characterization of tropical ramial and trunk woods and their lignins in view of applications in soil amendments - avec Kasangana, P. B., Khasa, D. P., & Stevanovic, T. (mars 2020)</p>
-        <a type="button" class="button" href="/files/Papers/Industrial crops.pdf" target="_blank">Article</a>
-      </li>
-      <li><p class="nomarginafter">2021/07/06 - J'ai reçu le prix du meilleur poster au Congrès mondial d'agroforesterie à Québec (2022) et j'ai remporté le prix du public pour la meilleure vidéo de vulgarisation (CRMR, Ulaval).</p></li>
-      <li><p>22 juillet 2022 - J'ai présenté une partie de mes recherches : Impact des amendements en bois raméal fragmenté sur les propriétés physico-chimiques du sol et la communauté fongique à deux sites au Bénin. 5ème Congrès mondial d'agroforesterie.</p></li>
-      <li><p>21 juin 2021 - Un de mes articles de thèse a été sélectionné pour être présenté à la 8ème conférence internationale sur la gestion durable des déchets solides.</p></li>
-      <li><p>04 novembre 2019 - Un de mes articles de thèse a été sélectionné pour être présenté au 6ème Colloque Québécois en Agroforesterie sur le thème Un territoire habité (présentation orale).</p></li>
-      <li><p>25 juillet 2019 - Un de mes articles de thèse a été sélectionné pour être présenté au VIIème Colloque des sciences, cultures et technologies de l'UAC au Bénin (présentation orale).</p></li>
-      <li><p>25 juin 2019 - Un de mes articles de thèse a été sélectionné pour être présenté à la conférence annuelle du CERMA, Université Laval.</p></li>
-    </ul>
-
-    <!-- Ajout des informations de contact après les actualités -->
-    <br/><br/>
-    <div align="center">
-      <p>Email : <a href="mailto:rodrigue.daassi@biopterre.com">rodrigue.daassi@biopterre.com</a></p>
-      <p>Affiliations : <a href="https://www.biopterre.com" target="_blank">Biopterre</a>, <a href="https://www.biopterre.com/english-version" target="_blank">Biopterre - Centre de développement des bioproduits Innovateur de nature</a></p>
-    </div>
-    <!-- Fin de l'ajout -->
-
-  </div><!-- Homeright -->
-</div><!-- Homepage -->
+    <div class="foot rightfoot">
+      <p>Copyright © 2024 Rodrigue Daassi - All Rights Reserved.</p>
+    </div><!-- rightfoot -->
+  </footer><!-- footer -->
+</div>
+<script src="{{ site.baseurl }}/js/script.js"></script>
+</body>
+</html>
