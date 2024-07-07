@@ -1,0 +1,13 @@
+title: Rodrigue Daassi
+email: rodrigue.daassi@biopterre.com
+description: Researcher
+url: "https://rodriguedaassi.github.io"
+baseurl: "/Rodrigue-Daassi"
+twitter_username: Rodas036
+github_username: RodrigueDaassi
+youtube_username: rodriguedaassi9641
+theme: jekyll-theme-minimal
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
