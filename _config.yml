@@ -6,7 +6,7 @@ baseurl: ""
 twitter_username: Rodas036
 github_username: RodrigueDaassi
 youtube_username: rodriguedaassi9641
-theme: minima
+theme: jekyll-theme-minimal
 markdown: kramdown
 plugins:
   - jekyll-sitemap
