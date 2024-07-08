@@ -25,3 +25,4 @@ gem "kramdown-parser-gfm"
 
 # Ajoutez Webrick pour le serveur local
 gem 'webrick', '>=1.7.0'
+ 
