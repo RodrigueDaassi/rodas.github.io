@@ -1,24 +1,60 @@
 title: Rodrigue Daassi
 email: rodrigue.daassi@biopterre.com
-description: Researcher
+description: 
+  en: Researcher
+  fr: Chercheur
 url: "https://rodriguedaassi.github.io"
 baseurl: "/rodas.github.io"
 twitter_username: Rodas036
 github_username: RodrigueDaassi
 youtube_username: rodriguedaassi9641
+
+# Affiliation details
+affiliation_name: 
+  en: Biopterre
+  fr: Biopterre
+affiliation_url: "https://www.biopterre.com/"
+
+# Theme and plugins
 theme: jekyll-theme-minimal
 markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+# Language settings
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["assets", "images", "css", "js", "fonts"]
+parallel_localization: true
+
+# Default settings
 defaults:
   - scope:
       path: ""
-      values:
-        lang: en
+      type: "pages"
+    values:
+      layout: "default"
+      lang: "en"
   - scope:
       path: "fr"
-      values:
-        lang: fr
- 
+      type: "pages"
+    values:
+      lang: "fr"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Build settings
+sass:
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
