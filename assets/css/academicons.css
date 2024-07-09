@@ -9,11 +9,11 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src:url('../fonts/academicons.eot');
-    src:url('../fonts/academicons.eot') format('embedded-opentype'),
-        url('../fonts/academicons.ttf') format('truetype'),
-        url('../fonts/academicons.woff') format('woff'),
-        url('../fonts/academicons.svg') format('svg');
+    src: url('{{ site.url }}{{ site.baseurl }}/assets/fonts/academicons.eot');
+    src: url('{{ site.url }}{{ site.baseurl }}/assets/fonts/academicons.eot') format('embedded-opentype'),
+         url('{{ site.url }}{{ site.baseurl }}/assets/fonts/academicons.ttf') format('truetype'),
+         url('{{ site.url }}{{ site.baseurl }}/assets/fonts/academicons.woff') format('woff'),
+         url('{{ site.url }}{{ site.baseurl }}/assets/fonts/academicons.svg') format('svg');
 }
 .ai {
   font-family: 'Academicons';
@@ -424,7 +424,6 @@
 }
 .ai-zotero-square:before {
   content: "\e932";
-}
 /*  Duplication of the FontAwesome style classes using 'ai' in place of 'fa'. */
 .ai-lg {
   font-size: 1.33333em;
