@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
+    <title>{{ page.title }} | Rodrigue Daassi</title>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/academicons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,53 +9,47 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ site.baseurl }}/fr{{ page.url }}" />
 </head>
 <body>
 <div id="wrapper">
     <header>
-        <a href="javascript:void(0);" id="mobileMenu" class="icon" onclick="myMenu()">
+        <a href="javascript:void(0);" id="mobileMenu" class="icon" onclick="myMenu()" aria-label="Mobile Menu">
             <i class="fa fa-bars"></i> Menu
         </a>
-        <div class="Menu" id="Menu">
+        <nav class="Menu" id="Menu">
             <div class="Menuleft" id="Menuleft">
                 <h1><a href="{{ site.baseurl }}/en/about">Rodrigue Daassi</a></h1>
-            </div><!-- Menuleft -->
-
+            </div>
             <div class="Menuright" id="Menuright">
                 <a id='home' href="{{ site.baseurl }}/en/"><i class="fa fa-fw fa-home"></i>Home</a>
                 <a id='about' href="{{ site.baseurl }}/en/about">About Me</a>
                 <a id='research' href="{{ site.baseurl }}/en/research">Research</a>
                 <a id='hobbies' href="{{ site.baseurl }}/en/hobbies">Hobbies</a>
                 <div class="language-switch">
-                    <a href="{{ site.baseurl }}/">EN</a> | <a href="{{ site.baseurl }}/fr/">FR</a>
+                    <a href="{{ site.baseurl }}/en/" aria-label="English version">EN</a> | <a href="{{ site.baseurl }}/fr/" aria-label="Version française">FR</a>
                 </div>
-            </div><!-- Menuright -->
-
-        </div><!-- Menu-->
+            </div>
+        </nav>
     </header>
-
     <main id="Main">
         {{ content }}
     </main>
-
     <footer id="footer">
         <div class="foot leftfoot">
             <ul>
-                <li><p>Email: <a href="mailto:rodrigue.daassi@biopterre.com">rodrigue.daassi@biopterre.com</a></p></li>
-                <li><p>Affiliations: <a href="https://www.biopterre.com/" target="_blank">Biopterre</a>, <a href="https://www.biopterre.com/english-version" target="_blank">Biopterre - Centre de développement des bioproduits Innovateur de nature</a></p></li>
+                <li><p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p></li>
+                <li><p>Affiliations: <a href="{{ site.affiliation_url }}" target="_blank">{{ site.affiliation_name }}</a></p></li>
             </ul>
-        </div><!-- leftfoot -->
-
+        </div>
         <div class="mobileShow foot centerfoot">
             <p></p>
-        </div><!-- rightfoot -->
-
+        </div>
         <div class="foot rightfoot">
-            <p>Copyright © 2024 Rodrigue Daassi - All Rights Reserved.</p>
-        </div><!-- rightfoot -->
-    </footer><!-- footer -->
+            <p>Copyright © {{ site.time | date: '%Y' }} Rodrigue Daassi - All Rights Reserved.</p>
+        </div>
+    </footer>
 </div>
 <script src="{{ site.baseurl }}/js/script.js"></script>
 </body>
 </html>
- 
