@@ -2,7 +2,7 @@ title: Rodrigue Daassi
 email: rodrigue.daassi@biopterre.com
 description: Researcher
 url: "https://rodriguedaassi.github.io"
-baseurl: "/rodas.github.io"
+baseurl: "/rodas.github.io"  # assurez-vous que c'est correct
 twitter_username: Rodas036
 github_username: RodrigueDaassi
 youtube_username: rodriguedaassi9641
@@ -21,4 +21,3 @@ defaults:
       path: "fr"
       values:
         lang: fr
- 
